@@ -5,5 +5,5 @@ RUN apt-get install -y software-properties-common python3-pip python3-dev build-
 RUN apt-get -y install libgeos-dev
 COPY . /app
 RUN pip3 install -r requirements.txt
-EXPOSE 8080
+EXPOSE 80
 CMD ["python3", "run.py"]
